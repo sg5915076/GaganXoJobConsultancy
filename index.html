@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GaganXo Job Consultancy</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .hero {
+
+        background: url(image/pic16.jpg);
+        min-height: 100vh;
+        padding: 50px 100px;
+        overflow-x: hidden;
+        position: relative;
+        background-size: cover;
+    }
+
+    .nav-bar {
+        display: flex;
+        padding: 40px 120px;
+    }
+
+    .nav-logo img{
+        width: 135px;
+    }
+
+    /* .nav-logo h3{ */
+        /* position: fixed; */
+        /* margin-right: 500px; */
+    /* } */
+
+    .nav-links{
+        flex: 1;
+    }
+
+    .nav-links ul{
+        margin-left: 50px;
+        display: inline;
+    }
+
+    .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 25px;
+
+    }
+
+    .nav-links ul a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .nav-links ul li::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: grey;
+        display: block;
+        margin: auto;
+        transition: .5s;
+    }
+
+    .nav-links ul li:hover::after{
+        width: 100%;
+
+    }
+
+    .banner-title{
+        margin: 80px 130px;
+        color: black;
+    }
+
+    .banner-title h1{
+        font-size: 64px;
+        margin-bottom: 30px;
+
+    }
+
+    .banner-title h1 span{
+        color: honeydew;
+    }
+
+    .vertical-bar{
+        height: 100%;
+        background: #000;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+
+
+    .social-icons{
+        height: 35%;
+        width: 80px;
+        background: grey;
+        text-align: center;
+        padding-top: 27%;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .social-icons .fa{
+        margin: 15px 23px;
+        display: block;
+        padding: 8px;
+        border: 1px solid white;
+        border-radius: 50%;
+        cursor: pointer;
+
+    }
+
+    .nav-bar .fa{
+        display: none;
+    }
+
+    .container2 .box{
+        margin-top: 20px;
+        padding-top: 0px;
+        width: 1300px;
+        margin-left: 50px;
+        display: table;
+    }
+    .container2 .box .box-row{
+        display: table-row;
+    }
+.container2 .box .box-cell{
+    display: table-cell;
+    width: 40%;
+    padding: 25px;
+}
+.container2 .box .box-cell.box1{
+    background: white;
+    /* color: white; */
+    text-align: justify;
+    width: 20%;
+    opacity: 0.6;
+    
+}
+.container2 .box .box-cell.box2{
+    background: white;
+    opacity: 0.6;
+    width: 20%;
+    text-align: justify;
+}
+
+.container2 .box .box-cell.box1 h3{
+
+    color: darkgreen;
+}
+.container2 .box .box-cell.box2 h3{
+    color: darkgreen;
+}
+
+    
+    
+    @media (max-width: 991px){
+        .vertical-bar{
+            display: none;
+        }
+        .banner-title{
+            margin: 80px 40px;
+        }
+        .banner-title h1{
+            font-size: 50px;
+        }
+        .nav-bar{
+            padding: 40px 30px;
+        }
+        .fa-bars{
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+        .nav-bar .fa{
+            display: block;
+            color: white;
+            margin: 10px 25px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .nav-links{
+            height: 100vh;
+            width: 200px;
+            background:black;
+            top: 0;
+            right: -200px;
+            position: absolute;
+            text-align: left;
+            z-index: 2;
+            transition: 0.5s;
+        }
+        .nav-links ul a{
+            display: block;
+
+        }
+        .container2 .box{
+        width: 80%;
+        /* margin: 80px; */
+        }
+        
+    }
+</style>
+
+<body>
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="image/gagan2.png" alt="GaganXo Job Consultancy">
+                <h2>GaganXo Job <br> Consultancy</h2>
+            </div>
+            <!-- <div class="name">
+                
+            </div> -->
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="#" class="active"><b>Home</b></a></li>
+                <li><a href="job.html"><b>Job Seeker</b></a></li>
+                <li><a href="employ.html"><b>Employers</b></a></li>
+                <li><a href="about.html"><b>About Us</b></a></li>
+                <li><a href="contact.html"><b>Contact Us</b></a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </div>
+        <div class="banner-title">
+            <h1>Whatever you're <span>looking for,</span> <br> we've got it.</h1>
+        </div>
+        <div class="vertical-bar">
+            <div class="social-icons">
+                <a href="">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com/gaganxo_job_consultancy?igshid=7dbjvrqzw4hm" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-twitter"></i>
+            </a>
+
+            </div>
+        </div>
+
+        <div class="container2">
+            
+            <div class="box">
+                <div class="box-row">
+                    <div class="box-cell box1">
+                        
+                        <h3>Industries We Serve-</h3>
+                        <br>
+                        <ul>
+                            <li>Customer Services</li>
+                            <li>Sales</li>
+                            <li>Help Desk</li>
+                            <li>Office Support</li>
+                            <li>Clerical & Administrative</li>
+                            <li>Banking</li>
+                            <li>Call Center</li>
+                            <li>Accounting</li>
+                            <li>Manufacturing</li>
+                            <li>Maintenance Tech</li>
+                            <li>Warehouse & Distribution</li>
+                        </ul>
+                    </div>
+
+                    <div class="box-cell box2">
+                        <h3>Recent News</h3>
+                        <br>
+                          <p><b>Endeavour hires new Operations Manager</b></p>
+                          <p> January 2023</p>
+                          <br>
+                        <p><b>Call Center industry expecting a 5% growth rate in 2023</b></p>
+                        
+                        <p>January 2023</p>
+                        <br>
+                        <p><b>What are the top 10 in-demand jobs of the year?</b></p>
+                        
+                        <p>January 2023</p>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    
+
+    <script>
+        var show = document.getElementById("nav-links");
+        function showMenu(){
+            show.style.right = "0";
+
+        }
+        function closeMenu(){
+            show.style.right = "-200px";
+
+        }
+    </script>
+
+</body>
+
+</html>
